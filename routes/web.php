@@ -19,3 +19,6 @@ Route::get('/', function () {
 
 Route::get('/characters', "MarvelController@characters");
 Route::get('/charactersbyname', "MarvelController@charactersByName");
+Route::get('/contact');
+Route::get('/contact/messages',"MessageController@getMessages");
+Route::post('/contact/submit', "MessageController@submit");

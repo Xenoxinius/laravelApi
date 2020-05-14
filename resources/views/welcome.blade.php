@@ -15,6 +15,12 @@
     <br>
     <br>
     <br>
+    @if(session('blabla'))
+        <div class="alert alert-success">
+            {{session('blabla')}}
+        </div>
+    @endif
+
     <h1 class="text-danger">Marvel Characters Database</h1>
     <div class="container">
         <div class="row">
