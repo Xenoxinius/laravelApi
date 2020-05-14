@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/comics', "MarvelController@characters");
+Route::get('/characters', "MarvelController@characters");
+Route::get('/charactersbyname', "MarvelController@charactersByName");
